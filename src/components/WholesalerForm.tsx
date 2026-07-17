@@ -103,7 +103,7 @@ function Field({
   label: string;
   name: string;
   placeholder?: string;
-  inputMode?: React.HTMLAttributeAnchorTarget extends never ? never : "tel" | "text" | "email";
+  inputMode?: "tel" | "text" | "email";
 }) {
   return (
     <div className="space-y-2">
