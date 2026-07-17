@@ -109,7 +109,7 @@ function Hero() {
           </h1>
           <p className="mt-8 max-w-lg text-lg leading-relaxed text-muted-foreground">
             A regal, high-impact cider engineered for demanding export markets. Brewed and canned in
-            England by L&amp;K Meadows Ltd — delivered duty-free to your bonded warehouse.
+            England by L&amp;K Meadows Ltd - delivered duty-free to your bonded warehouse.
           </p>
           <div className="mt-10 flex flex-wrap gap-4">
             <a
@@ -170,7 +170,7 @@ function SectionHeader({ eyebrow, title }: { eyebrow: string; title: string }) {
 
 function Specs() {
   const items = [
-    { t: "Crisp Profile", d: "A dry, clean finish with restrained sweetness — architected for repeat pour occasions." },
+    { t: "Crisp Profile", d: "A dry, clean finish with restrained sweetness - architected for repeat pour occasions." },
     { t: "Highly Carbonated", d: "Aggressive effervescence delivering a lively, bright sensory impact on first sip." },
     { t: "Traditional English Bittersweet", d: "Blended from heritage bittersweet apple cultivars grown across the West Country." },
     { t: "High-Impact Formulation", d: "A proprietary 8.4% ABV build tuned for value-per-serve in modern trade channels." },
@@ -208,10 +208,10 @@ function Margins() {
           </p>
           <ul className="mt-10 space-y-4">
             {[
-              "Exclusive territorial rights per market",
-              "Recommended retail price protection",
-              "Quarterly volume-linked rebate programme",
-              "Co-funded activation for launch quarter",
+              "- Exclusive territorial rights per market",
+              "- Recommended retail price protection",
+              "- Quarterly volume-linked rebate programme",
+              "- Co-funded activation for launch quarter",
             ].map((li) => (
               <li key={li} className="flex items-start gap-4 border-b border-border/40 pb-4 text-sm text-foreground">
                 <span className="mt-2 h-px w-6 bg-primary" />
@@ -253,7 +253,7 @@ function Logistics() {
   const steps = [
     { t: "HMRC EMCS Clearance", d: "Direct duty-free clearance handled at origin under our UK excise warehouse ID." },
     { t: "Sealed Container Dispatch", d: "Full 20ft / 40ft loads, bonded seals, temperature-controlled documentation." },
-    { t: "Bonded Warehouse Delivery", d: "Landed directly into your destination bonded facility — no duty leakage." },
+    { t: "Bonded Warehouse Delivery", d: "Landed directly into your destination bonded facility - no duty leakage." },
   ];
   return (
     <section id="logistics" className="relative border-t border-border/40 py-32">
