@@ -107,3 +107,11 @@
   height: 1px;
   background: linear-gradient(90deg, transparent, var(--gold) 50%, transparent);
 }
+
+/* Hide the Lovable watermark badge on published deployments */
+#lovable-badge,
+[data-lovable-badge],
+.lovable-badge {
+  display: none !important;
+}
+
