@@ -13,11 +13,11 @@ export const Route = createFileRoute("/")({
         content:
           "BLVCK KINGS Cider by L&K Meadows Ltd, Birmingham. 8.4% ABV premium strong British cider. Duty-free HMRC EMCS export, protected 18% distributor margins.",
       },
-      { property: "og:title", content: "BLVCK KINGS Cider — Premium British Cider for Export" },
+      { property: "og:title", content: "BLVCK KINGS Cider — 8.4% ABV Premium British Cider | Wholesale Export" },
       {
         property: "og:description",
         content:
-          "Luxury 8.4% ABV British cider. Direct duty-free export via HMRC EMCS. Protected tier-one distributor margins.",
+          "BLVCK KINGS Cider by L&K Meadows Ltd, Birmingham. 8.4% ABV premium strong British cider. Duty-free HMRC EMCS export, protected 18% distributor margins.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
