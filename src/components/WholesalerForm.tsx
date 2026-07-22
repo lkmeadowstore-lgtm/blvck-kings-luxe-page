@@ -35,11 +35,29 @@ export function WholesalerForm() {
       return;
     }
     setSubmitting(true);
-    // Placeholder submission — wire to backend when available
-    await new Promise((r) => setTimeout(r, 700));
-    setSubmitting(false);
-    toast.success("Enquiry received. Our export desk will be in touch within 48 hours.");
-    (e.target as HTMLFormElement).reset();
+    try {
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify({
+          access_key: "176071ad-029a-427f-a07c-44faa29270bc",
+          subject: "New BLVCK KINGS Wholesale Enquiry",
+          from_name: "BLVCK KINGS Website",
+          name: parsed.data.name,
+          company: parsed.data.company,
+          country: parsed.data.country,
+          whatsapp: parsed.data.whatsapp,
+        }),
+      });
+      const json = await res.json();
+      if (!res.ok || !json.success) throw new Error(json.message || "Submission failed");
+      toast.success("Enquiry received. Our export desk will be in touch within 48 hours.");
+      (e.target as HTMLFormElement).reset();
+    } catch (err) {
+      toast.error(err instanceof Error ? err.message : "Something went wrong. Please try again.");
+    } finally {
+      setSubmitting(false);
+    }
   }
 
   return (
